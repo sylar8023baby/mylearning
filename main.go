@@ -2,34 +2,27 @@ package main
 
 import (
 	"fmt"
-	"math"
+
 )
 
-var a, c = 100, -200
-var b = "sylar"
+
 
 func main() {
 
-	fmt.Printf("当前 value 是：%d", a)
-	fmt.Printf("Hello,my master：%v", b)
-	fmt.Printf("绝对值：%v", math.Abs(float64(c)))
+	
+	var a,b int= 1,2
+
+	sum(a,b)
 
 }
 
-// some tools needed to be installed
+func sum(a,b int)  int{
 
-//  go-outline
-//   gotests
-//   gomodifytags
-//   impl
-//   goplay
-//   dlv
-//   staticcheck
-// gopls
+	var c  int
+	c = a+b
+	fmt.Printf("leijie = %d",c)
+	return c
 
-
-
-
-
+}
 
 
